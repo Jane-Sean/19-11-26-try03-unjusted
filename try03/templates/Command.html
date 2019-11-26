@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Command</title>
+</head>
+<body>
+<h1 align="center">How many pieces news do you want?</h1>
+<center>
+    <form action="result/" method="post">
+        {% csrf_token %}
+        <input type="text" name="required_num">
+        <br><br><br>
+        <h1>WHat's your keyword?</h1>
+        <input type="text" name="keyword">
+        <input type="submit">
+    </form>
+</center>
+</body>
+</html>
